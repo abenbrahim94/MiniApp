@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>mini cooper</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <script src="https://unpkg.com/axios@0.21.0/dist/axios.min.js"></script>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <div id="video">
+                <center>
+                    <img src="images/logo.png" class="logo"/>
+                    <div class="videos">
+                        <video ref="video" width="320" height="240" controls>
+                            <source ref="source" :src="src" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <div>
+                            <img @click="load('MINI_COOPER_1.mp4');" src="images/img4.jpg" class="img-video" />
+                            <img @click="load('MINI_COOPER_2.mp4');" src="images/img5.jpg" class="img-video" />
+                            <img @click="load('MINI_COOPER_3.mp4');" src="images/img6.jpg" class="img-video" />
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div id="model" class="model">
+                <div class="select-model">
+                    <div class="model-title">SELECT YOUR MODEL:</div>
+                    <div>
+                        <img @click="getData('1');" src="images/img1.png" class="img-model" />
+                        <img @click="getData('2');" src="images/img2.png" class="img-model" />
+                        <img @click="getData('3');" src="images/img3.png" class="img-model" />
+                    </div>
+                </div>
+                <div class="select-model items">
+                    <div>{{name}}</div>
+                    <div>{{price}}</div>
+                    <div>{{desc}}</div>
+                </div>
+            </div>
+        </div>
+        <script src="js/master.js"></script>
+    </body>
+</html>

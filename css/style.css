@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    margin-bottom:25px
+}
+video {
+    width: 80%;
+    height: 500px;
+    outline: none;
+    margin-bottom:25px
+}
+.img-video{
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    position: relative;
+    width: 150px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+img {
+    cursor: pointer;
+}
+.model{
+    margin: 30px;
+}
+.select-model{
+    float: left;
+    width: 50%;
+}
+.model-title{
+    font-weight:bold
+}
+.img-model{
+    width: 130px;
+    height: 50px;
+}
+.items div{
+    margin:5px
+}
